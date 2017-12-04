@@ -1,0 +1,40 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "portfolio-pwa"
+  },
+  "apps": [{
+    "root": "src",
+    "outDir": "dist",
+    "assets": [
+      "assets"
+    ],
+    "index": "index.html",
+    "main": "main.ts",
+    "test": "test.ts",
+    "tsconfig": "tsconfig.test.json",
+    "prefix": "app",
+    "styles": [
+      "styles.css"
+    ],
+    "scripts": [],
+    "environmentSource": "environments/environment.ts",
+    "environments": {
+      "source": "environments/environment.ts",
+      "dev": "environments/environment.ts",
+      "prod": "environments/environment.prod.ts"
+    }
+  }],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "scss",
+    "class": {
+      "spec": false
+    },
+    "component": {}
+  }
+}

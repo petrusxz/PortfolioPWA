@@ -5,7 +5,7 @@ import { Platform } from 'ionic-angular';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage: any = 'HomePage';
+  rootPage: string = 'HomePage';
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
