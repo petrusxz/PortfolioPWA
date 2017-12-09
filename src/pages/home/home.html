@@ -1,10 +1,84 @@
 <ion-content>
 
-  <ion-item no-lines color="primary">
-    <ion-avatar>
-      <img src="/assets/imgs/Petrus_2.jpg">
-    </ion-avatar>
-    <h2>Petrus Souza Cyrino</h2>
-  </ion-item>
+  <ion-toolbar no-border-top>
+    <ion-segment color="light" [(ngModel)]="menu">
+      <ion-segment-button value="home">
+        Home
+      </ion-segment-button>
+      <ion-segment-button value="experience">
+        Experience
+      </ion-segment-button>
+      <ion-segment-button value="projects">
+        Projects
+      </ion-segment-button>
+      <ion-segment-button value="contact">
+        Contact
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+  <div [ngSwitch]="menu">
+
+    <div *ngSwitchCase="'home'">
+      <h1 text-center>Hi! I'm Petrus Cyrino.</h1>
+      <ion-grid no-padding>
+        <ion-row class="informations">
+          <ion-col text-center col-12 col-sm>
+            <ion-icon name="ios-contact"></ion-icon>
+            <h3>About me</h3>
+            <p text-justify>I am a Full-Stack Web Developer that has the dream to become part of a group of people who
+              <b>love</b> to code. Well, it's pretty simple, I take software development really seriously and I enjoy the whole
+              process I take to built something great, even those small details that the user doesn't care about.</p>
+          </ion-col>
+          <ion-col text-center col-12 col-sm>
+            <ion-icon name="ios-medal"></ion-icon>
+            <h3>Abilities</h3>
+            <p text-justify>Focused and passionate. I like to write, test and refactor my code every moment of the development time and I
+              value every process that can guarantee the quality of the applications I build.</p>
+          </ion-col>
+          <ion-col text-center col-12 col-sm>
+            <ion-icon name="ios-fastforward"></ion-icon>
+            <h3>My future</h3>
+            <p text-justify>All the things I wish to attract to my life as a programmer are linked to the Web and Mobile development. I'll
+              improve myself to apply TDD in all my projects. And I'll make sure to be always open to learning the new stuff
+              that comes out frequently in the software development world.</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div *ngSwitchCase="'experience'">
+      <h1 text-center>A little about my work experience.</h1>
+      <ion-grid class="experience">
+        <ion-row justify-content-center>
+          <ion-col text-center col-2>
+            <ion-icon name="ios-desktop"></ion-icon>
+          </ion-col>
+          <ion-col col-6>
+            <h2>Web Applications</h2>
+            <p></p>
+          </ion-col>
+        </ion-row>
+        <ion-row justify-content-center>
+          <ion-col col-6>
+            <h2>Mobile Applications</h2>
+            <p></p>
+          </ion-col>
+          <ion-col text-center col-2>
+            <ion-icon name="ios-phone-portrait"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div *ngSwitchCase="'projects'">
+
+    </div>
+
+    <div *ngSwitchCase="'contact'">
+
+    </div>
+
+  </div>
 
 </ion-content>

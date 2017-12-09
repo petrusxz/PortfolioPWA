@@ -1,9 +1,64 @@
 page-home {
-  .item {
-    img {
-      width: 90px;
-      height: auto;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  ion-content {
+    background-image: url('/assets/imgs/love-coffee.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .toolbar-background {
+    background: transparent;
+    border-color: unset;
+  }
+  .segment-button {
+    color: white;
+  }
+  .segment-button.segment-activated {
+    color: map-get($colors, primary) !important;
+    border-color: map-get($colors, primary) !important;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  .scroll-content {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+  }
+  ion-grid {
+    height: 100%;
+  }
+  h1 {
+    font-weight: 800;
+    font-size: 3em;
+    color: white;
+    margin-top: 8%;
+  }
+  .informations {
+    margin-top: 10%;
+    h3 {
+      color: white;
     }
-    text-align: -webkit-center;
+    p {
+      font-size: 1.2em;
+      margin: 4%;
+      padding: 2%;
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+    b {
+      color: black;
+      background-color: palevioletred;
+    }
+    ion-icon {
+      color: white;
+      font-size: 4em;
+    }
+  }
+  .experience {
+    margin-top: 10%;
+    ion-col {
+      background-color: rgba(255, 255, 255, 0.4);
+      margin: 1px;
+    }
+    ion-icon {
+      font-size: 4em;
+    }
   }
 }
