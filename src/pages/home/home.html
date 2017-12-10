@@ -48,35 +48,66 @@
     </div>
 
     <div *ngSwitchCase="'experience'">
-      <h1 text-center>A little about my work experience.</h1>
+      <h1 text-center>About my work experience.</h1>
       <ion-grid class="experience">
         <ion-row justify-content-center>
-          <ion-col text-center col-2>
+          <ion-col text-center col-10 col-sm class="icon-col">
             <ion-icon name="ios-desktop"></ion-icon>
           </ion-col>
-          <ion-col col-6>
-            <h2>Web Applications</h2>
-            <p></p>
+          <ion-col col-10 no-padding class="xp-description">
+            <h3>Web Applications</h3>
+            <p text-justify>Generally, I build web solutions with Angular. I'm using Angular since the start of my career, and it has been
+              a great experience. This framework gives me innumerable possibilities to build something reliable and robust,
+              not to mention that writing tests with it have been a second nature.</p>
           </ion-col>
         </ion-row>
-        <ion-row justify-content-center>
-          <ion-col col-6>
-            <h2>Mobile Applications</h2>
-            <p></p>
+        <ion-row margin-top justify-content-center>
+          <ion-col text-center col-10 col-sm class="icon-col">
+            <ion-icon name="ios-phone-landscape"></ion-icon>
           </ion-col>
-          <ion-col text-center col-2>
-            <ion-icon name="ios-phone-portrait"></ion-icon>
+          <ion-col col-10 no-padding class="xp-description">
+            <h3>Mobile Applications</h3>
+            <p text-justify>Since I started all with Angular and got really familiar with Typescript, I decided to get this power I was tasting
+              and start to construct mobile applications with it. Then, naturally, Ionic Framework came into the scene. Well,
+              it only got better, now I could use the same good practices and testing environment to build hybrid apps.
+            </p>
           </ion-col>
         </ion-row>
       </ion-grid>
     </div>
 
     <div *ngSwitchCase="'projects'">
-
+      <div padding class="projects">
+        <h1 text-center>I'm currently building some awesome stuff to show...</h1>
+        <p text-center>Sorry! I am too picky with my solutions and I don't have something complete to display yet.</p>
+        <p text-center>But check my GitHub repository anyway!
+          <ion-icon name="happy"></ion-icon>
+        </p>
+      </div>
     </div>
 
-    <div *ngSwitchCase="'contact'">
-
+    <div class="contact" *ngSwitchCase="'contact'">
+      <ion-row justify-content-center>
+        <img src="/assets/imgs/Petrus_2.jpg">
+      </ion-row>
+      <ion-row justify-content-center>
+        <div text-center class="quote">
+          <p>“Anyone who has lost track of time when using a computer knows the propensity to dream, the urge to make dreams
+            come true and the tendency to miss lunch.”</p>
+          <p>— Sir Tim Berners-Lee</p>
+        </div>
+      </ion-row>
+      <ion-row class="social">
+        <ion-col text-center>
+          <ion-icon name="logo-github"></ion-icon>
+        </ion-col>
+        <ion-col text-center>
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </ion-col>
+        <ion-col text-center>
+          <ion-icon name="logo-codepen"></ion-icon>
+        </ion-col>
+      </ion-row>
     </div>
 
   </div>

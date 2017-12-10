@@ -32,7 +32,7 @@ page-home {
     margin-top: 8%;
   }
   .informations {
-    margin-top: 10%;
+    margin-top: 8%;
     h3 {
       color: white;
     }
@@ -52,13 +52,56 @@ page-home {
     }
   }
   .experience {
-    margin-top: 10%;
-    ion-col {
+    margin-top: 8%;    
+    .icon-col {
+      border: 2px solid rgba(255, 255, 255, 0.4);
+    }
+    .xp-description {
       background-color: rgba(255, 255, 255, 0.4);
-      margin: 1px;
+    }
+    h3 {
+      margin-left: 4px;
+    }
+    p {
+      margin: 4px;
     }
     ion-icon {
-      font-size: 4em;
+      font-size: 8em;
+      padding: 10px;
+    }
+  }
+  .projects {
+    p {
+      color: white;
+    }
+  }
+  .contact {
+    margin-top: 8%;
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      padding: 4px;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+    }
+    .quote {      
+      max-width: 300px;
+      p {
+        color: white;
+      }
+    }
+    .social {
+      margin-top: 8%;
+      ion-col {
+        border-right: 2px solid rgba(255, 255, 255, 0.4);
+      }
+      ion-col:last-child {
+        border-right: unset !important;
+      }
+      ion-icon {
+        color: white;    
+        font-size: 6em;    
+      }
     }
   }
 }
