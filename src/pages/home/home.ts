@@ -9,12 +9,32 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class HomePage {
 
   private menu: string = 'home';
+  private tabs: Array<string> = [
+    'home',
+    'experience',
+    'projects',
+    'contact'
+  ];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  iterator: number = 0;
+
+  constructor() { }
+
+  swipeTabs(e: any): void {
+    if (e.direction == 2) {
+      let i = this.iterator == this.tabs.length - 1 ? -1 : this.iterator;
+      this.iterator = i;
+      this.menu = this.tabs[++this.iterator];
+    }
+    if (e.direction == 4) {
+      let i = this.iterator == 0 ? this.tabs.length : this.iterator;
+      this.iterator = i;
+      this.menu = this.tabs[--this.iterator];
+    }
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
+  updateTab(): void {
+    this.iterator = this.tabs.indexOf(this.menu);
   }
 
 }

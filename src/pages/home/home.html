@@ -1,7 +1,7 @@
 <ion-content>
 
   <ion-toolbar no-border-top>
-    <ion-segment color="light" [(ngModel)]="menu">
+    <ion-segment color="light" [(ngModel)]="menu" (click)="updateTab()">
       <ion-segment-button value="home">
         Home
       </ion-segment-button>
@@ -17,7 +17,7 @@
     </ion-segment>
   </ion-toolbar>
 
-  <div [ngSwitch]="menu">
+  <div [ngSwitch]="menu" (swipe)="swipeTabs($event)">
 
     <div *ngSwitchCase="'home'">
       <h1 text-center>Hi! I'm Petrus Cyrino.</h1>
