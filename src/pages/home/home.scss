@@ -52,7 +52,7 @@ page-home {
     }
   }
   .experience {
-    margin-top: 8%;    
+    margin-top: 8%;
     .icon-col {
       border: 2px solid rgba(255, 255, 255, 0.4);
     }
@@ -84,7 +84,7 @@ page-home {
       padding: 4px;
       border: 2px solid rgba(255, 255, 255, 0.4);
     }
-    .quote {      
+    .quote {
       max-width: 300px;
       p {
         color: white;
@@ -99,8 +99,23 @@ page-home {
         border-right: unset !important;
       }
       ion-icon {
-        color: white;    
-        font-size: 6em;    
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 6em;
+      }
+      ion-icon[name="logo-github"]:hover {
+        color: black;
+        text-shadow: 2px 2px 4px #000000;
+        cursor: pointer;
+      }
+      ion-icon[name="logo-linkedin"]:hover {
+        color: #0084bf;
+        text-shadow: 2px 2px 4px #000000;
+        cursor: pointer;
+      }
+      ion-icon[name="logo-twitter"]:hover {
+        color: #1da1f2;
+        text-shadow: 2px 2px 4px #000000;
+        cursor: pointer;
       }
     }
   }
